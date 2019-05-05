@@ -2,7 +2,9 @@
   "name": "build-a-quiz-component-with-react",
   "version": "0.1.1",
   "private": true,
+  "homepage": "https://saandeepatn.github.io/React-QuizComponent",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-scripts": "1.1.1"
@@ -18,7 +20,10 @@
     "test:module5": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module5 || true",
     "test:module6": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module6 || true",
     "test:module7": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module7 || true",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "deploy:github-pages": "git push origin master:gh-pages"
   },
   "jest": {
     "collectCoverageFrom": [
