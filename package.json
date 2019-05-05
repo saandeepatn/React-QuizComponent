@@ -2,7 +2,7 @@
   "name": "build-a-quiz-component-with-react",
   "version": "0.1.1",
   "private": true,
-  "homepage": "https://saandeepatn.github.io/React-QuizComponent",
+  "main": "./index.js",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "16.2.0",
